@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+
+</head>
+
+<body>
+
+
+  <div style="width: 100%; height: auto; margin: 0 auto; position: relative; z-index: 3; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;">
+    <h1 style="font-weight: 500;">
+      Verification code.
+    </h1>
+  </div>
+
+  <p style="font-size: 1.4em; line-height: 1.4em; margin: 0; font-weight: 400;">
+    We sent you a verification code.
+  </p>
+
+  <form action="/verify-code" method="post">
+    <input type="text" name="submited_otp" id="submited_otp" placeholder="6 digit code">
+    <button type="submit" class="btn">Continue</button>
+    <!-- <a href="/subscripe" class="btn" style="padding: 0.75em 6em;">Send</a> -->
+
+    <span>Didn't get a code? <strong style="text-decoration: underline;">Resend Code</strong></span>
+  </form>
+
+</body>
+
+</html>
